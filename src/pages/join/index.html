@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <%= require("html-loader!../common/banner/index.html") %>
+      <main class="main-container max-center">
+        <img style="width:100%" src="/public/images/article.jpg" alt="">
+        <div class="cont">
+          <p>
+            <br>
+          </p>
+          <p>
+            At Fiery Crab ,we tailor your experience and the party vibe specifically to your function needs. Cajun Boil
+            Seafood is a unique cuisine that is made to be shared in a casual fun environment, this style of serving is
+            exceptionally great for large groups.
+          </p>
+          <p>
+            Adaptable to host a multitude of events our venue can hold up to 100 people comfortably; from anniversaries
+            to corporate dinners. We have a vast space with the potential to be elegantly transformed.
+          </p>
+          <p>
+            Event examples include:<br>
+            Birthdays, Bachelor/Bachelorette, Anniversaries, Graduation, Family occasions, kids’ parties, and much more.
+          </p>
+        </div>
+      </main>
+      <!-- 引入公共页尾 -->
+      <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

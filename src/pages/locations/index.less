@@ -1,0 +1,106 @@
+@import "~@/assets/global.less";
+.location-container {
+  .location-list {
+    .location-item {
+      border-top: 1px solid #ccc;
+      &:nth-child(2n + 2) {
+        background-color: #f7f7f7;
+        .text-layout{
+          order:2;
+        }
+        .map-layout{
+          order: 1;
+        }
+      }
+      &:first-child{
+        border-top: none;
+      }
+      .location-box {
+        .flex(space-between);
+        padding: 50px;
+        box-sizing: border-box;
+        .text-layout {
+          width: 45%;
+          padding: 0 30px;
+          box-sizing: border-box;
+          .title {
+            color: #c60000;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          .contact-list {
+            margin-bottom: 35px;
+            .contact-item {
+              .flex(flex-start);
+              padding: 20px 0;
+              position: relative;
+              &::after {
+                position: absolute;
+                width: calc(100% - 50px);
+                height: 1px;
+                bottom: 0;
+                right: 0;
+                content: "";
+                background-image: linear-gradient(to right, #dfdfdf, #fff);
+              }
+              .icon {
+                width: 45px;
+                height: 45px;
+                margin-right: 5px;
+                .flex();
+                img {
+                  max-width: 24px;
+                }
+              }
+              .text {
+                font-size: 17px;
+                color: #505050;
+                a {
+                  color: #007acc;
+                  &:hover {
+                    color: #505050;
+                  }
+                }
+              }
+            }
+          }
+          .table-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6a6a6a;
+            margin-bottom: 20px;
+          }
+          table {
+            width: 100%;
+            border: 1px solid #d1d1d1;
+            td {
+              width: 50%;
+              padding: 10px;
+              box-sizing: border-box;
+              border-bottom: 1px solid #d1d1d1;
+            }
+            tr {
+              &:last-child {
+                td {
+                  border-bottom: none;
+                }
+              }
+              & {
+                td {
+                  &:first-child {
+                    border-right: 1px solid #d1d1d1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .map-layout {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+@import "./768.less" screen and (max-width:768px);

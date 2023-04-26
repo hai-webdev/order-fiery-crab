@@ -1,0 +1,126 @@
+@import "~@/assets/global.less";
+.form-container {
+  padding: 50px 0;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  max-width: 640px;
+  .title-box {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #607d8b;
+      height: 10px;
+      width: 100%;
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: justify;
+      a {
+        color: #15c;
+      }
+    }
+  }
+  .form {
+    .box {
+      border: 1px solid #eee;
+      box-sizing: border-box;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        i {
+          color: #d93025;
+        }
+      }
+      .desc {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+      .inp {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        select {
+          border: 1px solid #eee;
+          width: 240px;
+          height: 48px;
+          padding: 0 10px;
+          box-sizing: border-box;
+          color: #aaa;
+          outline: none;
+          option {
+            height: 36px;
+          }
+        }
+        input {
+          width: 295px;
+          height: 40px;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid #eee;
+          box-sizing: border-box;
+          position: relative;
+          &:focus {
+            border-bottom: 2px solid #15c;
+          }
+        }
+      }
+      .error {
+        display: none;
+        align-items: center;
+        .icon {
+          margin-right: 10px;
+        }
+        span {
+          font-size: 12px;
+          color: #d93025;
+        }
+      }
+      &.error {
+        border: 1px solid #d93025;
+        .error {
+          display: flex;
+        }
+        .inp {
+          input {
+            border-bottom: 1px solid #d93025;
+            &:focus {
+              border-bottom: 2px solid #d93025;
+            }
+          }
+        }
+      }
+    }
+    .submit{
+      background-color: #5d7b89;
+      color:#fff;
+      font-weight: bold;
+      font-size: 14px;
+      width: 96px;
+      height: 36px;
+      border-radius: 6px;
+      border:none;
+      outline: none;
+      cursor: pointer;
+      &:hover{
+        background-color: #4b6d7c;
+      }
+    }
+  }
+}
+@import "./768.less" screen and (max-width:768px);

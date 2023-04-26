@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+  <%= require("html-loader!../common/banner/index.html") %>
+  <main class="main-container">
+    <div class="main-content max-center">
+      <div class="left-layout">
+        <div class="title">Our Story</div>
+        <div class="content">
+          <p>
+            The very first Fiery Crab Juicy Seafood Restaurant and Bar was established in Lafayette, Louisiana. The concept of Fiery Crab is to serve the freshest seafood Louisiana has to offer, and combine it with bold, juicy (Cajun) flavors.
+          </p>
+          <p>
+            Each bag of seafood is served “piping hot”, cooked in one of the Fiery Crab Signature sauces of our guests choosing. Our seafood is boiled in the traditional Cajun style, with a new exciting flare. You receive your seafood in a heat-proof bag, keeping your food hot and guaranteeing a treat that will have your tastebuds dancing. When dining with us, be ready to “get down and messy” with all of the deliciousness, since digging into the bag is no “clean” feat!
+          </p>
+          <p>
+            Since the launch of its first location, Fiery Crab has expanded into different cities across Louisiana and South Carolina. Fiery Crab has even bottled its own brand of perfectly prepared sauces to be sold in local grocery stores, bringing a Fiery treat into your home.
+          </p>
+        </div>
+      </div>
+      <div class="right-layout">
+        <img src="/public/images/about.jpg" alt="">
+      </div>
+    </div>
+  </main>
+  <!-- 引入公共页尾 -->
+  <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.order-container {
+    padding: 30px 0;
+    .order-list {
+      .order-item {
+        width: calc((100% - 3px * 2) / 2);
+        margin: 0 3px 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px dotted #161616;
+        &:nth-child(4n + 1) {
+          margin-left: 3px;
+        }
+        &:nth-child(4n + 4) {
+          margin-right: 3px;
+        }
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+        &:nth-child(2n + 2) {
+          margin-right: 0;
+        }
+        .title-box {
+          color: #161616;
+          margin-bottom: 10px;
+          .title {
+            font-size: 20px;
+          }
+          .desc {
+            font-size: 13px;
+          }
+        }
+        .img {
+          margin-bottom: 5px;
+        }
+        .text {
+            margin-bottom: 10px;
+          .p {
+            margin-bottom: 5px;
+            font-size: 12px;
+          }
+        }
+        .more {
+          border-radius: 24px;
+          height: 32px;
+          font-size: 12px;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
